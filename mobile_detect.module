@@ -1,0 +1,7 @@
+<?php
+
+/**
+ * @file
+ * This module does nothing on its own. 
+ * You only need to install it if another module requires it. 
+ */

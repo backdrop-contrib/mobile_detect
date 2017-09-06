@@ -1,0 +1,4 @@
+name = Mobile Detect
+description = Simple wrapper for the Mobile Detect library to make it available to other modules.
+backdrop = 1.x
+type = module
