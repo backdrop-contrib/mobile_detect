@@ -43,7 +43,7 @@ to settings.php file:
 
     $conf['cache_backends'][] = 'modules/mobile_detect/mobile_detect_caching/mobile_detect_caching.inc';
     $conf['cache_class_cache_page'] = 'MobileDetectCache';
-    $conf['mobile_detect_library'] = 'modules/mobile_detect/library/Mobile_Detect/Mobile_Detect.php';
+    $conf['mobile_detect_library'] = 'modules/mobile_detect/library/Mobile_Detect.php';
 
 You may need to adjust the path if you installed
 the module in a different location.

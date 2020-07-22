@@ -9,7 +9,7 @@
  * Implements hook_registry_files_alter().
  *
  * Adds the Mobile_Detect() class to the registry so that autoloading works.
- * See http://backdrop.stackexchange.com/questions/42266 for a discussion.
+ * See http://drupal.stackexchange.com/questions/42266 for a discussion.
  */
 function mobile_detect_registry_files_alter(&$files, $modules) {
   $library_path = _mobile_detect_get_library_path();
