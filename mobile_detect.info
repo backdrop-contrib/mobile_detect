@@ -1,6 +1,6 @@
 name = Mobile Detect
 description = Lightweight mobile detection based on <a href='http://mobiledetect.net/'>Mobile_Detect.php</a>
-core = 7.x
+backdrop = 1.x
+type = module
 package = Mobile Detect
 
-files[] = mobile_detect.drush.inc

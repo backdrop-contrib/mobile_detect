@@ -1,6 +1,7 @@
 name = Mobile Detect Caching
-description = Cache handling for Mobile Detect (EXPERIMENTAL! USE AT OWN RISK!)
-core = 7.x
+description = Cache handling for Mobile Detect (EXPERIMENTAL: USE AT OWN RISK!)
+backdrop = 1.x
+type = module
 package = Mobile Detect
 
 dependencies[] = mobile_detect

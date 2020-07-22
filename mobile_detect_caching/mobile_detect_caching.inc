@@ -16,13 +16,13 @@
  * $conf['mobile_detect_library'] = 'sites/all/libraries/Mobile_Detect/Mobile_Detect.php';
  * @endcode
  */
-class MobileDetectCache extends DrupalDatabaseCache implements DrupalCacheInterface {
+class MobileDetectCache extends BackdropDatabaseCache implements BackdropCacheInterface {
 
   /**
    * {@inheritdoc}
    */
   function __construct($bin) {
-    include_once DRUPAL_ROOT . '/' . variable_get('mobile_detect_library', 'sites/all/libraries/Mobile_Detect/Mobile_Detect.php');
+    include_once BACKDROP_ROOT . '/' . backdrop_get_path('module', 'mobile_detect') . '/library/Mobile_Detect.php');
 
     parent::__construct($bin);
   }
@@ -67,7 +67,8 @@ class MobileDetectCache extends DrupalDatabaseCache implements DrupalCacheInterf
           $device = 'tablet:';
         }
 
-      } catch (Exception $e) {
+      }
+      catch (Exception $e) {
         // nop
       }
     }

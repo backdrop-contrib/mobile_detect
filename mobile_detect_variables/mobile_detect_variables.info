@@ -1,6 +1,7 @@
 name = Mobile Detect Variables
 description = Sub-module to provide $is_mobile and $is_tablet to preprocess and templates.
-core = 7.x
+backdrop = 1.x
+type = module
 package = Mobile Detect
 
 dependencies[] = mobile_detect
