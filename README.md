@@ -1,4 +1,4 @@
-Mobile Detect (2.8.26)
+Mobile Detect (2.8.34)
 ======================
 
 This module is a wrapper for the [Mobile Detect library](https://github.com/serbanghita/Mobile-Detect), 
