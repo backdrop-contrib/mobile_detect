@@ -13,7 +13,6 @@ This module is not intended (and never will be enhanced) to provide
 theme switching or redirection; other modules already provide this 
 functionality. 
 
-
 Installation
 ------------
 
@@ -80,8 +79,3 @@ License
 
 This project is GPL v2 software. See the LICENSE.txt file in this directory for
 complete text.
-
-
-
-
-
