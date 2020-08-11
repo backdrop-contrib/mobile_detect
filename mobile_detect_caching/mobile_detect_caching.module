@@ -10,7 +10,6 @@
  * Implements hook_autoload_info().
  *
  */
-
 function hook_autoload_info() {
   return array(
     'MobileDetectCache' => 'mobile_detect_caching.inc',

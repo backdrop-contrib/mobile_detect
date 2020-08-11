@@ -24,7 +24,7 @@ function mobile_detect_registry_files_alter(&$files, $modules) {
  * Getter function to retrieve a Mobile_Detect() singleton.
  *
  * @return object
- * Instance of Mobile_Detect(), NULL if failure.
+ *   Instance of Mobile_Detect(), NULL if failure.
  */
 function mobile_detect_get_object() {
   $detect = &backdrop_static(__FUNCTION__);
@@ -91,8 +91,8 @@ function mobile_detect_check_type($type) {
  * Retrieve the path to the Mobile_Detect library.
  *
  * @return string
- * Candidate path to the Mobile_Detect library, relative
- * to Backdrop root.
+ *   Candidate path to the Mobile_Detect library, relative
+ *   to Backdrop root.
  *
  * @access private
  */

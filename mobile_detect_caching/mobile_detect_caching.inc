@@ -21,7 +21,7 @@ class MobileDetectCache extends BackdropDatabaseCache implements BackdropCacheIn
   /**
    * {@inheritdoc}
    */
-  function __construct($bin) {
+  public function __construct($bin) {
     include_once BACKDROP_ROOT . '/' . backdrop_get_path('module', 'mobile_detect') . '/library/Mobile_Detect.php');
 
     parent::__construct($bin);
@@ -30,7 +30,7 @@ class MobileDetectCache extends BackdropDatabaseCache implements BackdropCacheIn
   /**
    * {@inheritdoc}
    */
-  function set($cid, $data, $expire = CACHE_PERMANENT) {
+  public function set($cid, $data, $expire = CACHE_PERMANENT) {
     $cid = $this->mobile_detect_caching_alter_cid() . $cid;
     parent::set($cid, $data, $expire);
   }
@@ -38,7 +38,7 @@ class MobileDetectCache extends BackdropDatabaseCache implements BackdropCacheIn
   /**
    * {@inheritdoc}
    */
-  function getMultiple(&$cids) {
+  public function getMultiple(&$cids) {
     if (is_array($cids)) {
       foreach ($cids as $key => $cid) {
         $cids[$key] = $this->mobile_detect_caching_alter_cid() . $cid;
