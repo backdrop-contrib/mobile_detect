@@ -19,8 +19,6 @@ function mobile_detect_requirements($phase) {
 
   $status = array('title' => $t('Mobile Detect'));
 
-  include_once backdrop_get_path('module', 'mobile_detect') . '/library/Mobile_Detect.php';
-
   if (class_exists('Mobile_Detect')) {
     $mobile_detect = new Mobile_Detect();
     $status['value'] = $mobile_detect::VERSION;

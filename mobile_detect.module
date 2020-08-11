@@ -6,17 +6,11 @@
  */
 
 /**
- * Implements hook_registry_files_alter().
- *
- * Adds the Mobile_Detect() class to the registry so that autoloading works.
- * See http://drupal.stackexchange.com/questions/42266 for a discussion.
- */
-function mobile_detect_registry_files_alter(&$files, $modules) {
-  $library_path = _mobile_detect_get_library_path();
-
-  $files[$library_path . '/Mobile_Detect.php'] = array(
-    'module' => 'mobile_detect',
-    'weight' => 0,
+  * Implements hook_autoload_info().
+  */
+function mobile_detect_autoload_info() {
+  return array(
+    'Mobile_Detect' => 'library/Mobile_Detect.php',
   );
 }
 
@@ -28,7 +22,6 @@ function mobile_detect_registry_files_alter(&$files, $modules) {
  */
 function mobile_detect_get_object() {
   $detect = &backdrop_static(__FUNCTION__);
-
   if (!isset($detect)) {
     if (class_exists('Mobile_Detect')) {
       try {
@@ -85,21 +78,6 @@ function mobile_detect_check_type($type) {
   else {
     return $detect->{$type}();
   }
-}
-
-/**
- * Retrieve the path to the Mobile_Detect library.
- *
- * @return string
- *   Candidate path to the Mobile_Detect library, relative
- *   to Backdrop root.
- *
- * @access private
- */
-function _mobile_detect_get_library_path() {
-  $library_path = backdrop_get_path('module', 'mobile_detect') . '/library';
-
-  return $library_path;
 }
 
 /**
