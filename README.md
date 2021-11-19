@@ -1,17 +1,17 @@
-Mobile Detect (2.8.34)
+Mobile Detect (2.8.37)
 ======================
 
 This is a lightweight mobile detection based on the [Mobile Detect library](https://github.com/serbanghita/Mobile-Detect),
-which is bundled in this module. 
+which is bundled in this module.
 
-This module is intended to aid developers utilizing mobile-first and 
-responsive design techniques who also have a need for slight changes for 
-mobile and tablet users. An example would be showing (or hiding) a block 
-or content pane to a particular device. 
+This module is intended to aid developers utilizing mobile-first and
+responsive design techniques who also have a need for slight changes for
+mobile and tablet users. An example would be showing (or hiding) a block
+or content pane to a particular device.
 
-This module is not intended (and never will be enhanced) to provide 
-theme switching or redirection; other modules already provide this 
-functionality. 
+This module is not intended (and never will be enhanced) to provide
+theme switching or redirection; other modules already provide this
+functionality.
 
 Installation
 ------------
@@ -19,13 +19,13 @@ Installation
 - Install this module using the [official Backdrop CMS instructions](https://backdropcms.org/guide/modules).
 
 If you think everything is installed correctly but it isn't working, you may
-need to clear  the Backdrop caches (**admin/config/development/performance**). 
+need to clear  the Backdrop caches (**admin/config/development/performance**).
 
 Usage
 ------------
 
-The base module just provides a factory method for creating a singleton 
-of the mobile detection class, for use in themes and other modules: 
+The base module just provides a factory method for creating a singleton
+of the mobile detection class, for use in themes and other modules:
 
     $detect = mobile_detect_get_object();
     $is_tablet = $detect->isTablet();
@@ -65,7 +65,7 @@ Bugs and Feature requests should be reported in the [Issue Queue](https://github
 Current Maintainers
 -------------------
 
-- [Laryn Kragt Bakker](https://github.com/laryn), [CEDC.org](https://CEDC.org) 
+- [Laryn Kragt Bakker](https://github.com/laryn), [CEDC.org](https://CEDC.org)
 
 Credits
 -------
