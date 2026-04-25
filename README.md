@@ -1,8 +1,8 @@
-Mobile Detect (2.8.37)
-======================
+Mobile Detect
+=============
 
-This is a lightweight mobile detection based on the [Mobile Detect library](https://github.com/serbanghita/Mobile-Detect),
-which is bundled in this module.
+This is a lightweight mobile detection module based on the [Mobile Detect library](https://github.com/serbanghita/Mobile-Detect),
+version 2.8.47 which is bundled in this module.
 
 This module is intended to aid developers utilizing mobile-first and
 responsive design techniques who also have a need for slight changes for
