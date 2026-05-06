@@ -22,7 +22,7 @@ class MobileDetectCache extends BackdropDatabaseCache implements BackdropCacheIn
    * {@inheritdoc}
    */
   public function __construct($bin) {
-    include_once BACKDROP_ROOT . '/' . backdrop_get_path('module', 'mobile_detect') . '/library/Mobile_Detect.php');
+    include_once BACKDROP_ROOT . '/' . backdrop_get_path('module', 'mobile_detect') . '/libraries/Mobile_Detect.php';
 
     parent::__construct($bin);
   }

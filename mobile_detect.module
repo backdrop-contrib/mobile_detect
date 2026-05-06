@@ -10,7 +10,7 @@
   */
 function mobile_detect_autoload_info() {
   return array(
-    'Mobile_Detect' => 'library/Mobile_Detect.php',
+    'Mobile_Detect' => 'libraries/Mobile_Detect.php',
   );
 }
 

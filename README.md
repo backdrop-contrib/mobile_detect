@@ -1,7 +1,8 @@
 Mobile Detect
 =============
 
-This is a lightweight mobile detection module based on the [Mobile Detect library](https://github.com/serbanghita/Mobile-Detect),
+This is a lightweight mobile detection module based on the
+[Mobile Detect library](https://github.com/serbanghita/Mobile-Detect),
 version 2.8.47 which is bundled in this module.
 
 This module is intended to aid developers utilizing mobile-first and
@@ -43,7 +44,7 @@ to settings.php file:
 
     $conf['cache_backends'][] = 'modules/mobile_detect/mobile_detect_caching/mobile_detect_caching.inc';
     $conf['cache_class_cache_page'] = 'MobileDetectCache';
-    $conf['mobile_detect_library'] = 'modules/mobile_detect/library/Mobile_Detect.php';
+    $conf['mobile_detect_library'] = 'modules/mobile_detect/libraries/Mobile_Detect.php';
 
 You may need to adjust the path if you installed
 the module in a different location.
@@ -55,7 +56,7 @@ If your module requires the library provided by this wrapper, you can access the
 library by:
 
 - Requiring this module as a dependency in your module
-- Loading the file as follows: `include_once (backdrop_get_path('module', 'mobile_detect') . '/library/Mobile_Detect.php');`
+- Loading the file as follows: `include_once (backdrop_get_path('module', 'mobile_detect') . '/libraries/Mobile_Detect.php');`
 
 Issues
 ------
@@ -65,12 +66,14 @@ Bugs and Feature requests should be reported in the [Issue Queue](https://github
 Current Maintainers
 -------------------
 
-- [Laryn Kragt Bakker](https://github.com/laryn), [CEDC.org](https://CEDC.org)
+- [Laryn Kragt Bakker](https://github.com/laryn)
+- Co-maintainers welcome
 
 Credits
 -------
 
-- Ported to Backdrop by [Laryn Kragt Bakker](https://github.com/laryn), [CEDC.org](https://CEDC.org)
+- Ported to Backdrop by [Laryn Kragt Bakker](https://github.com/laryn)
+- Initial port to Backdrop was sponsored by [CEDC.org](https://CEDC.org)
 - Maintained for Drupal by [nonom](https://www.drupal.org/u/nonom), [darol100](https://www.drupal.org/u/darol100), and [mpdonadio](https://www.drupal.org/u/mpdonadio).
 
 
